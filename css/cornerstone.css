@@ -1,0 +1,1075 @@
+/**************************************************************/
+/******************* CORNERSTONE FRAMEWORK ********************/
+/******************* by fiveonenine design ********************/
+/*********************** version 1.1 **************************/
+/**************************************************************/
+
+/**************************************************************/
+/******************* SET STANDARD ELEMENTS ********************/
+/**************************************************************
+
+Contains all of the base styling for the html page document
+key classes names:
+
+html
+body
+.wrapper
+main
+header
+footer
+article
+nav
+
+*/
+
+html,
+body, 
+#wrapper,
+header,
+#title,
+footer, 
+#main,
+#slideshow,  
+article, 
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+	font-family: arial, sans-serif;
+	font-size: .95em;
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+}
+
+#wrapper, #slideshow, header, footer, #main {
+	width: 100%;
+	position: relative;
+}
+
+#wrapper {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+
+/**************************************************************/
+/****************** MAIN NAVIGATION STYLING *******************/
+/**************************************************************
+
+Traditional styling for main navigation with or without a dropdown
+menu. Simply wrap the navigation in the <nav></nav> tag.
+
+nav
+
+*/
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0;
+}
+
+nav ul li a:link, 
+nav ul li a:visited {
+	display: block;
+	color: #333;
+	display: inline-block;
+	font-family: 'Noto Serif', serif;
+	font-weight: 400;
+	font-size: 1.2em;
+	width: 100%;
+	height: 100%;
+}
+
+nav ul li a:hover, 
+nav ul li a:active {
+	color: #964652;
+}
+
+nav ul li:hover a {
+	color: #964652;
+}
+
+nav ul li ul {
+	width: 120px;
+	opacity: 0;
+	position: absolute;
+	visibility:hidden;
+	z-index:50;
+	padding: 0;
+}
+
+nav ul li ul li {
+	display: block;
+	float:none;
+	text-align: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li ul li a:link, 
+nav ul li ul li a:visited {
+	display: block;
+	padding-left: 5px;
+	color: #333;
+	width: 100%;
+}
+
+nav ul li ul li a:hover, 
+nav ul li ul li a:active {
+	color: #964652;
+}
+
+nav ul li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	margin: 0;
+}
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+
+
+
+
+
+
+
+/**************************************************************/
+/********************** ELEMENT STYLING ***********************/
+/**************************************************************
+
+Element styling including navigation, links, and images. Also
+includes basic button styling. Specific element/class names:
+
+h1
+h2
+h3
+h4
+h5
+p
+.align-left
+.align-center
+.align-right
+.align-justify
+
+.button
+.white (white button)
+.red (red button)
+.blue (blue button)
+.yellow (yellow button)
+.green (green button)
+.black (black button)
+
+.em-box
+
+.full-width-image
+
+*/
+
+
+
+
+/*********************** TEXT STYLING *************************/
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+	color: #333;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+p {
+	font-size: 1em;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-justify {
+	text-align: justify;
+}
+
+/**************************************************************/
+
+/*********************** LINK STYLING *************************/
+
+a:link, 
+a:visited {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover, 
+a:active {
+	color: #a1a1a1;
+}
+
+/**************************************************************/
+
+
+/********************** BUTTON STYLING ************************/
+.button {
+	background: #c1c1c1;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	line-height: 25px;
+	display: inline-block;
+	padding: 0px 30px;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.white {	
+	color: #333;
+	background: #f5f5f5;
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	border-color: #a1a1a1 #a1a1a1 #a1a1a1;
+}
+
+.white:hover {
+	color: #333;
+	background: #e6e6e6;
+}
+
+.red {	
+	color: white;
+	background: #da4f49;
+	background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+	background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+	background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+	background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+	border-color: #bd362f #bd362f #802420;
+}
+
+.red:hover {
+	color: #FFF;
+	background: #bd362f;
+}
+
+.blue {	
+	color: white;
+	background: #006dcc;
+	background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+	background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+	border-color: #0044cc #0044cc #002a80;
+}
+
+.blue:hover {
+	color: #FFF;
+	background: #0044cc;
+}
+
+.yellow {	
+	color: white;
+	background: #faa732;
+	background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+	background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+	background-image: -o-linear-gradient(top, #fbb450, #f89406);
+	background-image: linear-gradient(to bottom, #fbb450, #f89406);
+	border-color: #f89406 #f89406 #ad6704;
+}
+
+.yellow:hover {
+	color: #FFF;
+	background: #f89406;
+}
+
+.green {	
+	color: white;
+	background: #5bb75b;
+	background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+	background-image: -moz-linear-gradient(top, #62c462, #51a351);
+	background-image: -o-linear-gradient(top, #62c462, #51a351);
+	background-image: linear-gradient(to bottom, #62c462, #51a351);
+	border-color: #51a351 #51a351 #387038;
+}
+
+.green:hover {
+	color: #FFF;
+	background: #51a351;
+}
+
+.black {	
+	color: white;
+	background: #363636;
+	background-image: -webkit-linear-gradient(top, #444444, #222222);
+	background-image: -moz-linear-gradient(top, #444444, #222222);
+	background-image: -o-linear-gradient(top, #444444, #222222);
+	background-image: linear-gradient(to bottom, #444444, #222222);
+	border-color: #222222 #222222 #000000;
+}
+
+.black:hover {
+	color: #FFF;
+	background: #222222;
+}
+
+/**************************************************************/
+
+/*********************** EM BOX *******************************/
+
+.em-box {
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	padding: 10px;
+}
+	
+
+/**************************************************************/
+
+/*********************** FORMS ********************************/
+
+input:not([type=submit]):not([type=file]) {
+   border: none;
+   background: #FFF;
+   width: 150px;
+   height: 25px;
+}
+
+/**************************************************************/
+
+
+/*********************** IMAGE ********************************/
+
+.full-width-image {
+	width: 100%;
+}
+
+/**************************************************************/
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+
+
+
+
+
+
+
+
+/**************************************************************/
+/****************** GRID STRUCTURE STYLING ********************/
+/**************************************************************
+
+Contains all the grid structure for the framework, column + width
+of column in % as well as specific classes for styling:
+
+.container  (basic container)
+.row		(row for each 100% width of column's)
+.column10
+.column20
+.column25   (4 column layout)
+.column30
+.column33   (3 column layout)
+.column40
+.column50   (2 column layout)
+.column60
+.column66
+.column70
+.column75
+.column80
+.column90
+.column100  (1 column layout)
+.header10
+.header20
+.header25
+.header30
+.header33
+.header40
+.header50
+.header60
+.header66
+.header70
+.header75
+.header80
+.header90
+.header100
+.footer10
+.footer20
+.footer25
+.footer30
+.footer33
+.footer40
+.footer50
+.footer60
+.footer66
+.footer70
+.footer75
+.footer80
+.footer90
+.footer100
+.column-box
+
+*/
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px;
+	clear: both;
+}
+
+.row {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.column100 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.column90 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 90%;
+}
+
+.column80 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 80%;
+}
+
+.column75 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 75%;
+}
+
+.column70 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 70%;
+}
+
+.column66 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 66.66666%;
+}
+
+.column60 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 60%;
+}
+
+.column50 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 50%;
+}
+
+.column40 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 40%;
+}
+
+.column33 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 33.333333%;
+}
+
+.column30 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 30%;
+}
+
+.column25 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 25%;
+}
+
+.column20 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 20%;
+}
+
+.column10 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 10%;
+}
+
+.header100 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.header90 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 90%;
+}
+
+.header80 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 80%;
+}
+
+.header75 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 75%;
+}
+
+.header70 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 70%;
+}
+
+.header66 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 66.66666%;
+}
+
+.header60 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 60%;
+}
+
+.header50 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 50%;
+}
+
+.header40 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 40%;
+}
+
+.header33 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 33.333333%;
+}
+
+.header30 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 30%;
+}
+
+.header25 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 25%;
+}
+
+.header20 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 20%;
+}
+
+.header10 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 10%;
+}
+
+.footer100 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.footer90 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 90%;
+}
+
+.footer80 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 80%;
+}
+
+.footer75 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 75%;
+}
+
+.footer70 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 70%;
+}
+
+.footer66 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 66.66666%;
+}
+
+.footer60 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 60%;
+}
+
+.footer50 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 50%;
+}
+
+.footer40 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 40%;
+}
+
+.footer33 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 33.333333%;
+}
+
+.footer30 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 30%;
+}
+
+.footer25 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 25%;
+}
+
+.footer20 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 20%;
+}
+
+.footer10 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 10%;
+}
+
+.column-box {
+	margin: 0 5px;
+}
+
+#wrapper:after,
+#main:after,
+header:after,
+footer:after,
+.container:after,
+.row:after,
+.column-box:after,
+.header100:after,
+.header90:after,
+.header80:after,
+.header75:after,
+.header70:after,
+.header66:after,
+.header60:after,
+.header50:after,
+.header40:after,
+.header33:after,
+.header30:after,
+.header25:after,
+.header20:after,
+.header10:after,
+.column100:after,
+.column90:after,
+.column80:after,
+.column75:after,
+.column70:after,
+.column66:after,
+.column60:after,
+.column50:after,
+.column40:after,
+.column33:after,
+.column30:after,
+.column25:after,
+.column20:after,
+.column10:after,
+.footer100:after,
+.footer90:after,
+.footer80:after,
+.footer75:after,
+.footer70:after,
+.footer66:after,
+.footer60:after,
+.footer50:after,
+.footer40:after,
+.footer33:after,
+.footer30:after,
+.footer25:after,
+.footer20:after,
+.footer10:after,
+nav:after,
+ul:after,
+#slideshow:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+
+
+
+
+ 
+/**************************************************************/
+/******************** MEDIAQUERY RESPONSIVE *******************/
+/**************************************************************
+
+Using mediaquery's this will make the site respond at 3 different
+screen widths:
+
+980px +
+768px - 979px
+480px - 767px
+0px - 479px
+
+*/
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+.container {
+	width: 768px;
+}
+
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+.container {
+	width: 100%;
+}
+
+.column100 {
+	float: none;
+	width: 100%;
+}
+
+.column90 {
+	float: none;
+	width: 100%;
+}
+
+.column80 {
+	float: none;
+	width: 100%;
+}
+
+.column75 {
+	float: none;
+	width: 100%;
+}
+
+.column70 {
+	float: none;
+	width: 100%;
+}
+
+.column66 {
+	float: none;
+	width: 100%;
+}
+
+.column60 {
+	float: none;
+	width: 100%;
+}
+
+.column50 {
+	float: none;
+	width: 100%;
+}
+
+.column40 {
+	float: none;
+	width: 100%;
+}
+
+.column33 {
+	float: none;
+	width: 100%;
+}
+
+.column30 {
+	float: none;
+	width: 100%;
+}
+
+.column25 {
+	float: none;
+	width: 100%;
+}
+
+.column20 {
+	float: none;
+	width: 100%;
+}
+
+.column10 {
+	float: none;
+	width: 100%;
+}
+
+.column-box {
+	margin: 0px;
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 479px) {
+
+.container {
+	width: 100%;
+}
+
+.column100 {
+	float: none;
+	width: 100%;
+}
+
+.column90 {
+	float: none;
+	width: 100%;
+}
+
+.column80 {
+	float: none;
+	width: 100%;
+}
+
+.column75 {
+	float: none;
+	width: 100%;
+}
+
+.column70 {
+	float: none;
+	width: 100%;
+}
+
+.column66 {
+	float: none;
+	width: 100%;
+}
+
+.column60 {
+	float: none;
+	width: 100%;
+}
+
+.column50 {
+	float: none;
+	width: 100%;
+}
+
+.column40 {
+	float: none;
+	width: 100%;
+}
+
+.column33 {
+	float: none;
+	width: 100%;
+}
+
+.column30 {
+	float: none;
+	width: 100%;
+}
+
+.column25 {
+	float: none;
+	width: 100%;
+}
+
+.column20 {
+	float: none;
+	width: 100%;
+}
+
+.column10 {
+	float: none;
+	width: 100%;
+}
+
+.column-box {
+	margin: 0px;
+}
+
+}
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+
+/**************************************************************/
+/******************* CUSTOM ICON FONT SET *********************/
+/**************************************************************
+
+Custom icon font included in every package. This will include your
+links to icons for page use. Link to index of page found in the 
+document folder.
+
+*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/

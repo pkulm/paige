@@ -1,0 +1,427 @@
+/**************************************************************/
+/****************** CUSTOM PAGE STYLING ***********************/
+/***************** by fiveonenine design **********************/
+/**************************************************************/
+
+
+/**************************************************************/
+/******************* GENERAL PAGE STYLING *********************/
+/**************************************************************
+
+General page styling goes here. 
+
+DELETE STYLING ON THIS PAGE BEFORE STARTING YOUR OWN WEBSITE.
+INCLUDED STYLING IS JUST FOR DEMO PAGE!
+
+*/
+
+body {
+	font-family: 'Belleza', sans-serif;
+	background-image: url("../images/well-balanz/bg.png");
+}
+
+ul{
+	list-style: none;
+	
+}
+
+a{
+	decoration: none;
+	font-family: 'Belleza', sans-serif;
+	font-size: 1.85em;
+	color: #871715;
+}
+
+li{
+	float: left;
+	display: inline;
+	padding: 0 17px;
+}
+
+a:link{
+	color: #871715;
+}
+
+a:visited{
+	color: #871715;
+}
+
+a:hover{
+	color: #C4D64E;
+}
+
+a:active{
+	color: #C4D64E;
+}
+
+#nav{
+	margin: 30px 0 40px 45px;
+	padding-bottom: 2px;
+	padding-left: 0;
+	/*border-bottom: dotted 2px #871715;*/
+}
+
+.column20,
+.column25{
+	height: 534px;
+}
+
+#logo{
+	width: 120%;
+	position: relative;
+	left: 513px;
+	top: -70px;
+}
+
+#logo-location{
+	width: 95%;
+	position: relative;
+	top: -70px;
+	left: 465px;
+}
+
+#logo-services{
+	width: 69.5%;
+	position: relative;
+	top: -70px;
+	left: 387px;
+}
+
+/*#circle{
+	background: #871715;
+	border-radius: 10em;
+	height: 20em;
+	width: 20em;
+	box-shadow: 0 -4px rgba(0, 0, 0, 0.27), 0 -12px 3px -5px #999;
+	margin: -110px 5px 0 -50px;
+}*/
+
+
+.main{
+	background: #871715;
+	z-index: -100;
+	
+}
+
+#first{
+	border-top: solid 10px #C4D64E;
+	border-bottom: solid 10px #FFA831;
+}
+
+#first-services{
+	border-top: solid 10px #C4D64E;
+	border-bottom: solid 10px #FFA831;
+	height: 250px;
+}
+
+#row1{
+	margin: -115px 0 0 -5px;
+}
+
+#spa{
+	top: 206px;
+	left: -581px;
+	position: relative;
+}
+
+#bms{
+	top: 55px;
+	left: -370px;
+	z-index: 1000;
+	position: relative;
+}
+
+#bamboo{
+	top: 108px;
+	left: -60px;
+	position: relative;
+}
+
+p{
+	font-family: 'Belleza', sans-serif;
+	font-size: 1.3em;
+}
+
+#btext{
+	margin: 5px 0;
+}
+
+table{
+	position: relative;
+	top: 60px;
+	left: -450px;
+}
+
+#top-sentance{
+	font-family: 'Belleza', sans-serif;
+	color: #fff;
+	font-size: 2.3em;
+}
+
+#img1,
+#img2{
+	width: 191px;
+	height: 142px;
+}
+
+#trouble{
+	padding: 0 4px 20px 4px;
+}
+
+#frily{
+	width: 150%;
+	position: relative;
+	top: 100px;
+	right: 130px;
+}
+
+#services{
+	position: relative;
+	top: 45px;
+	right: 600px;
+}
+
+a#large-map:link{
+	color: #C4D64E;
+}
+
+a#large-map:visited{
+	color: #C4D64E;
+}
+
+a#large-map:hover{
+	color: #CCC;
+}
+
+.bar{
+	background-color: #D67646;
+	border-radius: 5px;
+	float: none;
+	display: block;
+	margin-right: 30px;
+}
+
+.sub-bar{
+	border-radius: 5px;
+	margin-bottom: 40px;
+	float: none;
+	display: block;
+}
+
+.sub-list li{
+	display: block;
+	float: none;
+	font-family: 'Belleza', sans-serif;
+	color: #7F9632;
+	font-size: 1.5em;
+}
+
+.sub-list{
+	margin: 20px 0;
+}
+
+#services-list{
+	padding-left: 0;
+	border-right: solid 2px #C4D64E;
+}
+
+#jeff{
+	margin-left: 0;
+}
+
+#services-bottom-bar{
+	border-bottom: solid 10px #FFA831;
+}
+
+#specials nth:child(1n+1){
+	background-color: red;
+}
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+
+/**************************************************************/
+/***************** ADDITIONAL PAGE STYLING ********************/
+/**************************************************************
+
+Additional page styling goes here.
+
+*/
+
+
+
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+
+
+/**************************************************************/
+/******************* MEDIAQUERY RESPONSIVE ********************/
+/**************************************************************
+
+Custom Attributes if required for each device layout.
+
+*/
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+#row1 {
+	margin: -92px 0 0 -5px;
+	width: 768px;
+}
+
+#bms {
+width: 250%;
+top: 55px;
+left: -300px;
+z-index: 1000;
+position: relative;
+}
+
+#spa {
+width: 415%;
+top: 175px;
+left: -465px;
+position: relative;
+}
+
+#bamboo {
+width: 108%;
+top: 105px;
+left: -105px;
+position: relative;
+}
+
+#logo {
+	width: 120%;
+	position: relative;
+	left: 410px;
+	top: -55px;
+}
+
+#logo-services{
+	width: 69.5%;
+	position: relative;
+	top: -54px;
+	left: 310px;
+}
+
+.column20{
+height: 411px;
+}
+
+#nav{
+	margin: 30px 0;
+}
+
+a{
+	decoration: none;
+	font-family: 'Belleza', sans-serif;
+	font-size: 1.45em;
+	color: #871715;
+}
+
+#logo-location{
+	width: 93%;
+	position: relative;
+	top: -54px;
+	left: 374px;
+}
+
+#services{
+	position: relative;
+	top: 65px;
+	right: 486px;
+	width: 235%;
+}
+
+table{
+	position: relative;
+	top: 50px;
+	left: -350px;
+}
+
+#frily {
+	display: none;
+}
+
+}
+@media (min-width: 480px) and (max-width: 767px) {
+	
+#first{
+	margin-top: 0;
+}
+
+#row1 {
+	margin: -92px 0 0 -5px;
+	width: 480px;
+	display: none;
+}
+
+#logo {
+width: 25%;
+position: relative;
+top: -642px;
+left: 357px;
+/*display: none;*/
+}
+
+#bms {
+top: -1005px;
+left: 4px;
+z-index: 1000;
+position: relative;
+}
+
+#spa {
+width: 80%;
+top: -1375px;
+left: 0px;
+position: relative;
+}
+
+#bamboo {
+width: 108%;
+top: 105px;
+left: -105px;
+position: relative;
+}
+
+#nav{
+	margin: 0;
+	padding-bottom: 5px;
+	padding-left: 0;
+	position: relative;
+}
+
+/*#nav li{
+	display: block;
+	float: none;
+	text-align: justify;
+}*/
+
+a{
+	decoration: none;
+	font-family: 'Belleza', sans-serif;
+	font-size: 1.45em;
+	color: #871715;
+}
+	
+	
+}
+@media (min-width: 0px) and (max-width: 479px) {
+	
+	
+	
+}
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
