@@ -53,6 +53,23 @@ a{
 	font-family: "Minion Pro";
 }
 
+#sub-logo{
+	width: 28%;
+	margin-top: 20px;
+	float: left;
+}
+
+#sub-nav{
+	list-style: none;
+	position: relative;
+	top: 64px;
+	right: 200px;
+}
+
+#sub-nav li{
+	padding: 3px;
+}
+
 
 
 
