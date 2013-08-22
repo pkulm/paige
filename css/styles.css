@@ -39,6 +39,8 @@ Additional page styling goes here.
 
 #nav{
 	list-style: none;
+	position: relative;
+	top: -225px;
 }
 
 
