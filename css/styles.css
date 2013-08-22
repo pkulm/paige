@@ -35,12 +35,22 @@ Additional page styling goes here.
 
 #logo{
 	width: 50%;
+	margin-top: 20px;
 }
 
 #nav{
 	list-style: none;
 	position: relative;
 	top: -225px;
+}
+
+#nav li{
+	padding: 3px;
+}
+
+a{
+	font-size: 1.4em;
+	font-family: "Minion Pro";
 }
 
 
