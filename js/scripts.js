@@ -3,7 +3,10 @@ $(document).ready(function() {
 	jQuery('#camera_wrap_1').camera({
 		thumbnails: false
 	});
-	
+			
+$('#da-thumbs > li').each( function() { 
+	$(this).hoverdir(); 
+});
 	
 	/*
 var $window = $(window);
