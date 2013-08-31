@@ -49,6 +49,7 @@ Additional page styling goes here.
 }
 
 a{
+	color: #666;
 	font-size: 1.4em;
 	font-family: "Minion Pro";
 }
@@ -57,17 +58,23 @@ a{
 	width: 28%;
 	margin-top: 20px;
 	float: left;
+	display: block;
 }
 
 #sub-nav{
 	list-style: none;
-	position: relative;
-	top: 64px;
-	right: 200px;
+	float: left;
+	display: block;
+	margin-top: 70px;
 }
 
 #sub-nav li{
 	padding: 3px;
+	text-align: center;
+}
+
+img{
+	border: 0;
 }
 
 
