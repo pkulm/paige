@@ -63,15 +63,14 @@ Additional page styling goes here.
 #sub-logo{
 	width: 28%;
 	margin-top: 20px;
-	float: left;
-	display: block;
+	/*float: left;
+	display: block;*/
 }
 
 #sub-nav{
 	list-style: none;
-	float: left;
-	display: block;
-	margin-top: 70px;
+	position: relative;
+	top: -140px;
 }
 
 #sub-nav li{
@@ -83,6 +82,9 @@ img{
 	border: 0;
 }
 
+#da-thumbs{
+	margin-top: -110px;
+}
 
 
 
